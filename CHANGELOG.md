@@ -1,3 +1,33 @@
+# 1.0.0 (2023-05-11)
+
+
+### Bug Fixes
+
+* broken link ([60248a1](https://github.com/octonull/github-action-slack-notify-build/commit/60248a188bc8c95bbd95cbba332fa40e0b6ef787))
+* downgrade node16 ([47e32b6](https://github.com/octonull/github-action-slack-notify-build/commit/47e32b6483f2cce7a502dfef8545dd79ea242528))
+* install semantic-release ([e7452c0](https://github.com/octonull/github-action-slack-notify-build/commit/e7452c00b4567e572f4de5c1323a0dce82805b12))
+* remove wrong module ([5b9e614](https://github.com/octonull/github-action-slack-notify-build/commit/5b9e614bc8b6b4890c0e0a13e192eeb92bd124d6))
+* removing job field ([4bd2941](https://github.com/octonull/github-action-slack-notify-build/commit/4bd29412ee530da06c25cd5ff9f331ba32e63f9a))
+* tests ([d906713](https://github.com/octonull/github-action-slack-notify-build/commit/d906713e9a594fb9a88233853008d82a3879d724))
+* tests ([7a7ca58](https://github.com/octonull/github-action-slack-notify-build/commit/7a7ca58c85ed62bca087f54a171e0b39e7b5e16a))
+* tests ([3ce992c](https://github.com/octonull/github-action-slack-notify-build/commit/3ce992c6ce94fb3133f57dcea615898481d5be40))
+* tests ([0476331](https://github.com/octonull/github-action-slack-notify-build/commit/0476331b3622fb4d79b39508e2305864ffcb06c7))
+* tests ([017a734](https://github.com/octonull/github-action-slack-notify-build/commit/017a734ff119328b66b4ea112c17a3d151c1d69f))
+* tests ([fb9e08e](https://github.com/octonull/github-action-slack-notify-build/commit/fb9e08e6a5225d17b05766633e53064af85ee727))
+* typo ([fee5a1b](https://github.com/octonull/github-action-slack-notify-build/commit/fee5a1b828ffd3b451aa3377b2ed46c241a0298f))
+* upgrade to node18 ([2b9d0da](https://github.com/octonull/github-action-slack-notify-build/commit/2b9d0dab90937e6ac01e3fb51449878556ac41ed))
+* voxmedia to octonull ([519004a](https://github.com/octonull/github-action-slack-notify-build/commit/519004af79cf9fb0d4329e3a94d390797471276e))
+
+
+### Features
+
+* Add semantic release ([6d56e60](https://github.com/octonull/github-action-slack-notify-build/commit/6d56e60b7083b18466446dcf4b45f1b566235400))
+* adding job name in Slack message ([8189fb3](https://github.com/octonull/github-action-slack-notify-build/commit/8189fb3863d27e3ba6e4de0a7eb08fa0286e5903))
+* pushing the release in workflow ([4465a3e](https://github.com/octonull/github-action-slack-notify-build/commit/4465a3e5982572d66731d6cffeed49209b397984))
+* putting repo name more prominently ([373da97](https://github.com/octonull/github-action-slack-notify-build/commit/373da97827332b19e753c84d1e5b7937dbe0fbfa))
+* upgrade to node 16 ([d3b556f](https://github.com/octonull/github-action-slack-notify-build/commit/d3b556fae7084b5835b1bef108379f0293ac64e9))
+* using github env ([f233440](https://github.com/octonull/github-action-slack-notify-build/commit/f233440956d44857156c07a9d035c719c211ed08))
+
 # [1.6.0](https://github.com/voxmedia/github-action-slack-notify-build/compare/v1.5.0...v1.6.0) (2023-01-03)
 
 
