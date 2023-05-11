@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js v18.x
+      - name: Use Node.js v16.x
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
       - name: Notify slack
         # Don't attempt to send Slack notifications on fork PRs which don't have access to secrets
         if: env.SLACK_BOT_TOKEN
@@ -22,7 +22,7 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: ./
         with:
-          channel_id: CB9QT2NNR
+          channel: github
           status: STARTED
           color: warning
       - name: Get yarn cache
@@ -59,6 +59,6 @@ jobs:
         uses: ./
         with:
           message_id: ${{ steps.slack.outputs.message_id }}
-          channel_id: github
+          channel: github
           status: SUCCESS
           color: good
