@@ -59,6 +59,6 @@ jobs:
         uses: ./
         with:
           message_id: ${{ steps.slack.outputs.message_id }}
-          channel_id: CB9QT2NNR
+          channel_id: github
           status: SUCCESS
           color: good
