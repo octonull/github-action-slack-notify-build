@@ -36,7 +36,7 @@ describe('Utils', () => {
 
         expect(attachments[0].fields.find(a => a.title === 'Workflow')).toEqual({
           title: 'Workflow',
-          value: `<https://github.com/octnull/github-action-slack-notify-build/actions/runs/${runId} | CI>`,
+          value: `<https://github.com/octonull/github-action-slack-notify-build/actions/runs/${runId} | CI>`,
           short: true,
         });
       });
