@@ -14,20 +14,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Notify slack
-        # Don't attempt to send Slack notifications on fork PRs which don't have access to secrets
-        if: env.SLACK_BOT_TOKEN
-        id: slack
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: ./
-        with:
-          channel: github
-          status: STARTED
-          color: warning
       - name: Get yarn cache
         id: yarn-cache
-        run: echo "dir=$(yarn cache dir)" >>$GITHUB_OUTPUT
+        run: echo "dir=$(yarn cache dir)" >> "$GITHUB_OUTPUT"
       - uses: actions/cache@v3
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
@@ -52,13 +41,3 @@ jobs:
         run: 'git push -f https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:refs/heads/v1'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Notify slack success
-        if: env.SLACK_BOT_TOKEN
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: ./
-        with:
-          message_id: ${{ steps.slack.outputs.message_id }}
-          channel: github
-          status: SUCCESS
-          color: good
