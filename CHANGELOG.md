@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/octonull/github-action-slack-notify-build/compare/v1.0.0...v1.0.1) (2023-05-12)
+
+
+### Bug Fixes
+
+* modifing fork for organization ([08add89](https://github.com/octonull/github-action-slack-notify-build/commit/08add89cbbc6ac9362938a72dad2d4e798088c91))
+
 # 1.0.0 (2023-05-11)
 
 
