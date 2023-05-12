@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/octonull/github-action-slack-notify-build/compare/v1.0.1...v1.0.2) (2023-05-12)
+
+
+### Bug Fixes
+
+* remove unnecessary quotes ([0b65925](https://github.com/octonull/github-action-slack-notify-build/commit/0b65925e9c302dc93f9537cae4ee4d0b3835903c))
+
 ## [1.0.1](https://github.com/octonull/github-action-slack-notify-build/compare/v1.0.0...v1.0.1) (2023-05-12)
 
 
